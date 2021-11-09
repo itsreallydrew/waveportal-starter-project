@@ -1,34 +1,105 @@
+div {
+	font-family: 'Roboto', sans-serif;
+}
+
 .mainContainer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 64px;
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .dataContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 600px;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 600px;
+	background-color: rgba(240, 242, 239, 0.2);
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 30px;
 }
 
 .header {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 600;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+	color: whitesmoke;
 }
 
 .bio {
-  text-align: center;
-  color: gray;
-  margin-top: 16px;
+	text-align: center;
+	color: gray;
+	margin: 16px 0px;
 }
 
-.waveButton {
-  cursor: pointer;
-  margin-top: 16px;
-  padding: 8px;
-  border: 0;
-  border-radius: 5px;
-  
+.waveCount {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 20px;
+	color: rgb(0, 165, 207);
+}
+
+.button {
+	cursor: pointer;
+	margin-top: 25px;
+	padding: 8px;
+	border: 0;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	width: 175px;
+	height: 40px;
+	background-color: rgb(0, 165, 207);
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.button:hover {
+	background-color: rgba(0, 165, 207, 0.7);
+}
+
+.messageContainer {
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+}
+
+.wave-messages {
+	flex: 0 1 33%;
+	display: grid;
+	grid-template-rows: 2fr 40px 40px;
+	padding: 10px;
+	border: 2px solid black;
+	box-shadow: 0 4px 8px 0 rgba(240, 242, 239, 0.4);
+	border-radius: 20px;
+	height: 180px;
+	width: 200px;
+	margin: 15px;
+	font-size: 12px;
+	color: rgb(89, 46, 131);
+	inline-size: min-content;
+}
+
+p {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 20px;
+	color: rgb(240, 242, 239);
+	overflow-wrap: break-word;
+	width: 400px;
+}
+
+span {
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(107, 212, 37, 1);
+}
+
+.wave-messages:hover {
+	box-shadow: 0 4px 8px 0 rgba(107, 212, 37, 1);
+}
+
+.wave-messages div p:hover {
+	color: rgba(107, 212, 37, 1);
 }
